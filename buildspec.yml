@@ -1,19 +1,13 @@
 version: 0.2
 
 env:
-  shell: shell-tag
   variables:
-    key: "value"
-    key: "value"
-  parameter-store:
-    key: "value"
-    key: "value"
-  exported-variables:
-    - variable
-    - variable
+    ARN: "arn:aws:secretsmanager:ap-southeast-2:824344348657:secret:portfolio_emailjs-hVgF3e"
+    S3_BUCKET: 
   secrets-manager:
-    key: secret-id:json-key:version-stage:version-id
-  git-credential-helper: no | yes
+    NEXT_PUBLIC_EMAILJS_SERVICE_ID: $ARN:serviceID
+    NEXT_PUBLIC_EMAILJS_TEMPLATE_ID: $ARN:templateID
+    NEXT_PUBLIC_EMAILJS_PUBLIC_KEY: $ARN:publicKey
 
 phases:
   install:
@@ -27,6 +21,10 @@ phases:
     commands:
       - echo building...
       - npm run build
+  post_build:
+    commands:
+      - echo push artifacts to s3 bucket....
+      - aws s3 cp build s3:// ${S3_BUCKET} --recursive
 artifacts:
   files:
     - "**/*"
