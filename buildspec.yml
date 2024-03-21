@@ -3,7 +3,7 @@ version: 0.2
 env:
   variables:
     ARN: "arn:aws:secretsmanager:ap-southeast-2:824344348657:secret:portfolio_emailjs-hVgF3e"
-    S3_BUCKET: 
+    S3_BUCKET: "arn:aws:s3:::eden-portfolio"
   secrets-manager:
     NEXT_PUBLIC_EMAILJS_SERVICE_ID: $ARN:serviceID
     NEXT_PUBLIC_EMAILJS_TEMPLATE_ID: $ARN:templateID
