@@ -15,19 +15,21 @@ phases:
       nodejs: 18
   pre_build:
     commands:
-      - echo installing dependencies...
+      - echo Installing dependencies...
       - npm install
   build:
     commands:
-      - echo building...
+      - echo Building...
       - npm run build
-  #post_build:
-  #  commands:
-  #    - echo push artifacts to s3 bucket....
-  #    - aws s3 cp build s3:// ${S3_BUCKET} --recursive
+  post_build:
+    commands:
+      - echo Build completed on `date`
 artifacts:
   files:
     - "**/*"
-  #discard-paths: no
-  #base-directory: build
-  discard-paths: yes
+  discard-paths: no
+  base-directory: out
+cache:
+  paths:
+    - 'node_modules/**/*' # Cache `node_modules` for faster `yarn` or `npm i`
+    - '.next/cache/**/*' # Cache Next.js for faster application rebuilds
