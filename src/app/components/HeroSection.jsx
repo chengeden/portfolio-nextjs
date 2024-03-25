@@ -30,7 +30,6 @@ const HeroSection = () => {
 			});
 		});
 		// download a file from AWS S3 CDN (Cloudfront) to local https://learnreactui.dev/contents/how-to-download-a-file-in-react
-		// http://eden-portfolio.s3-website-ap-southeast-2.amazonaws.com/
 	};
 
 	return (
@@ -87,7 +86,6 @@ const HeroSection = () => {
 				>
 					<div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
 						<Image
-							//src="/images/hero-image.png"
 							src={heroImage}
 							alt="hero image"
 							className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
