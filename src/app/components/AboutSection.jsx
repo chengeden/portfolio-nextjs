@@ -18,6 +18,7 @@ const TAB_DATA = [
 				<li>MongoDB</li>
 				<li>HTML</li>
 				<li>CSS</li>
+				<li>AWS</li>
 			</ul>
 		)
 	},
@@ -25,10 +26,19 @@ const TAB_DATA = [
 		title: "Education",
 		id: "education",
 		content: (
-			<ul className="list-disc pl-2">
+			<ul className="list-disc pl-2 list-outside">
 				<li>Fullstack bootcamp</li>
-				<li>University of Sydney, Sydney</li>
-				<li>RMIT University, Melbourne</li>
+				<li>
+					Master of Information Technology
+					<p className="text-[#ADB7BE]">University of Sydney, Sydney</p>
+					<p className="text-[#ADB7BE] italic">Major in Software Engineering</p>
+				</li>
+				<li>
+					Bachelor of Information Technology
+					<p className="text-[#ADB7BE]">RMIT University, Melbourne</p>
+					<p className="text-[#ADB7BE] italic">Major in Application Programming</p>
+					<p className="text-[#ADB7BE] italic">Minor in Multimedia Design</p>
+				</li>
 			</ul>
 		)
 	},

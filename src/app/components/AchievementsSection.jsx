@@ -6,6 +6,11 @@ const AnimatedNumbers = dynamic(() => { return import("react-animated-numbers");
 const AchievementsSection = () => {
 	const achievementsList = [
 		{
+			metric: "Years of Experience",
+			value: "2",
+			postfix: "+",
+		},
+		{
 			metric: "Projects Completed",
 			value: "10",
 			postfix: "+",
@@ -14,11 +19,6 @@ const AchievementsSection = () => {
 			metric: "Awards Received",
 			value: "1",
 		},
-		{
-			metric: "Years of Experience",
-			value: "2",
-			postfix: "+",
-		},
 	];
 
 	return (
@@ -26,7 +26,7 @@ const AchievementsSection = () => {
 			{
 				achievementsList.map((achievement, index) => {
 					return (
-						<div key={index} className="flex flex-col items-center justify-center sm:my-0">
+						<div key={index} className="flex flex-col items-center justify-center sm:items-end sm:my-0">
 							<h2 className="text-white text-4xl font-bold flex flex-row">
 								<AnimatedNumbers
 									includeComma
