@@ -27,7 +27,7 @@ const TAB_DATA = [
 		id: "education",
 		content: (
 			<ul className="list-disc pl-2 list-outside">
-				<li>Fullstack bootcamp</li>
+				<li>Fullstack Bootcamp</li>
 				<li>
 					Master of Information Technology
 					<p className="text-[#ADB7BE]">University of Sydney, Sydney</p>
