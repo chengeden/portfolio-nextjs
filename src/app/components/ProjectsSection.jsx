@@ -8,7 +8,7 @@ const projectsData = [
 	{
 		id: 1,
 		title: "React Portfolio Website",
-		description: "Next.js, Tailwind, Animation, Responsive design",
+		description: "Next.js, Tailwind, Animation, Responsive design, AWS",
 		image: "/images/projects/1.png",
 		tag: ["All", "Web"],
 		gitUrl: "https://github.com/chengeden/portfolio-nextjs",
