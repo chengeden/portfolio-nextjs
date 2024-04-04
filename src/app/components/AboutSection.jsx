@@ -13,6 +13,7 @@ const TAB_DATA = [
 			<ul className="list-disc pl-2">
 				<li>JavaScript</li>
 				<li>React</li>
+				<li>Next.js</li>
 				<li>Node.js</li>
 				<li>Express</li>
 				<li>MongoDB</li>
