@@ -29,7 +29,6 @@ const HeroSection = () => {
 				alink.click();
 			});
 		});
-		// download a file from AWS S3 CDN (Cloudfront) to local https://learnreactui.dev/contents/how-to-download-a-file-in-react
 	};
 
 	return (
