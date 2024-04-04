@@ -8,11 +8,11 @@ const projectsData = [
 	{
 		id: 1,
 		title: "React Portfolio Website",
-		description: "Project 1 description",
+		description: "Next.js, Tailwind, Animation, Responsive design",
 		image: "/images/projects/1.png",
 		tag: ["All", "Web"],
-		gitUrl: "/",
-		previewUrl: "/",
+		gitUrl: "https://github.com/chengeden/portfolio-nextjs",
+		previewUrl: "http://eden-portfolio.s3-website-ap-southeast-2.amazonaws.com/",
 	},
 	{
 		id: 2,
